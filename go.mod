@@ -1,3 +1,3 @@
-module github.com/chihkaiyu/yogoc
+module github.com/chihkaiyu/YoGoCynical
 
 go 1.13
