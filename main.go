@@ -33,8 +33,13 @@ func main() {
 	target := ""
 	if len(args) == 0 {
 		target = "joke"
-	} else if strings.Contains(args[0], "help") {
+	} else if args[0] == "joke" {
+		target = "joke"
+	} else if args[0] == "song" {
+		target = "song"
+	} else {
 		fmt.Println(helpMsg)
+		return
 	}
 
 	goPath := os.Getenv("GOPATH")
